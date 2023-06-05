@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text dance animation - Prachi Bapat</title>
+
+    <style>
+
+
+
+      
+/* google fonts link */
+ @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+
+body {
+  font-size: 100px;
+  background-color:#191819;
+  margin: 100px;
+  font-family: "Ultra", serif;
+}
+
+.dance {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  justify-content: space-around;
+  max-height: 100px;
+  text-align: center;
+}
+
+@keyframes fontGrow {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.dance-letters {
+  animation-name: fontGrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+  transition-timing-function: ease-in-out;
+}
+
+.letter-p {
+  color: #fe96b7;
+}
+
+.letter-r {
+  color:  #b8d953;
+  animation-delay: 1s;
+}
+
+.letter-a {
+  color:  #bb86e9;
+}
+
+.letter-c {
+  color:  #e9c1a7;
+  animation-delay: 1s;
+}
+
+.letter-h {
+  color:#bcd66d;
+}
+
+.letter-i {
+  color:#e9da98;
+}
+
+.dance-1 {
+  display: flex;
+  justify-content: space-around;
+  gap: 5%;
+}
+
+
+/* key by key animation */
+@keyframes fontGrowReverse {
+  0% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(2);
+  }
+}
+
+.dance-letters-1 {
+  animation-name: fontGrowReverse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  transition-timing-function: ease-in-out;
+  
+}
+
+.letter-C {
+  color: #cbe69f;
+}
+
+.letter-O {
+  color: #cbe;
+  animation-delay: 1s;
+  font-stretch: ultra-condensed;
+}
+
+.letter-D {
+  color: #91d1df;
+}
+
+.letter-I {
+  color: #f7b407;
+  animation-delay: 1s;
+}
+
+.letter-N {
+  color: pink;
+}
+
+.letter-G {
+  color: rgb(156, 221, 148);
+}
+    </style>
+</head>
+<body>
+
+
+
+    
+<!-- first line -->
+<div class="dance">
+
+    <p class="dance-letters letter-p">P</p> 
+    <p class="dance-letters letter-r">r</p>
+    <p class="dance-letters letter-a">A</p>
+    <p class="dance-letters letter-c">c</p>
+    <p class="dance-letters letter-h">H</p>
+    <p class="dance-letters letter-i">i</p>
+    
+</div>
+
+
+<!-- second line    -->
+<div class="dance-1">
+    
+    <p class="dance-letters-1 letter-C">C</p>
+    <p class="dance-letters-1 letter-O">o</p>
+    <p class="dance-letters-1 letter-D">D</p>
+    <p class="dance-letters-1 letter-I">i</p>
+    <p class="dance-letters-1 letter-N">N</p>
+    <p class="dance-letters-1 letter-G">g</p>
+    
+</div>
+    
+    
+    
+</body>
+</html>
